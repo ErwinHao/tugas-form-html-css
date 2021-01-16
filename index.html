@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="main__header">
+      <img src="" alt="Logo PT.Excellent" />
+    </header>
+
+    <nav id="main__breadcrumb">
+      <ul>
+        <li>Home</li>
+        <li>Registration</li>
+      </ul>
+    </nav>
+
+    <main id="container">
+      <form action="#">
+        <header id="form__header">
+          <h1>Formulir Pendaftaran</h1>
+        </header>
+
+        <section id="form__left">
+          <h2>Keterangan Pribadi</h2>
+          <div class="form__group">
+            <div class="pas__photo"></div>
+          </div>
+          <div class="form__group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" placeholder="Nama Lengkap" id="name" />
+          </div>
+          <div class="form__group">
+            <label for="nickname">Nama Panggilan</label>
+            <input type="text" placeholder="Nama Panggilan" id="nickname" />
+          </div>
+          <div class="form__group">
+            <label for="gender">Jenis Kelamin</label>
+            <input type="radio" name="gender" value="LK" id="LK" />
+            <label for="LK">Laki-Laki</label>
+            <input type="radio" name="gender" value="PR" id="PR" />
+            <label for="PR">Perempuan</label>
+          </div>
+          <div class="form__group">
+            <label for="birthplace">Tempat Lahir</label>
+            <input type="text" id="birthplace" placeholder="Tempat Lahir" />
+          </div>
+          <div class="form__group">
+            <label for="birthdate">Tanggal Lahir</label>
+            <input type="date" />
+          </div>
+          <div class="form__group">
+            <label for="religion">Agama</label>
+            <select name="religion" id="religion">
+              <option value="Islam">Islam</option>
+              <option value="Katholik">Katholik</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Buddha">Buddha</option>
+              <option value="Hindu">Hindu</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="nationality">Kewarganegaraan</label>
+            <input type="text" placeholder="Kewarganegaraan" />
+          </div>
+
+          <div class="form__group">
+            <label for="nth-child">Anak ke</label>
+            <input type="number" id="nth-child" />
+          </div>
+
+          <div class="form__group">
+            <label for="siblings">Jumlah Saudara</label>
+            <input type="number" id="siblings" />
+          </div>
+
+          <div class="form__group">
+            <label for="marital">Status</label>
+            <input type="radio" name="marital" id="married" />
+            <label for="married">Kawin</label>
+            <input type="radio" name="marital" id="single" />
+            <label for="single">Belum Kawin</label>
+          </div>
+
+          <div class="form__group">
+            <label for="license">Jenis SIM</label>
+            <select name="license" id="license">
+              <option value="A">SIM A</option>
+              <option value="B1">SIM B1</option>
+              <option value="B2">SIM B2</option>
+              <option value="C">SIM C</option>
+              <option value="D">SIM D</option>
+            </select>
+          </div>
+        </section>
+
+        <section id="form__right">
+          <h2>Keterangan Tempat Tinggal</h2>
+          <div class="form__group">
+            <label for="residence">Alamat Lengkap</label>
+            <textarea
+              name="residence"
+              id="residence"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="form__group">
+            <label for="KTP">No.KTP</label>
+            <input type="number" />
+          </div>
+
+          <div class="form__group">
+            <label for="phone">No.Telp/HP</label>
+            <input type="number" id="phone" />
+          </div>
+
+          <div class="form__group">
+            <label for="other-res">Alamat Lain yang dapat dihubungi</label>
+            <textarea
+              name="other-res"
+              id="other-res"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="form__group">
+            <label for="other-phone">No.Telp/HP Lain</label>
+            <input type="number" id="other-phone" />
+          </div>
+
+          <div class="form__group">
+            <button type="submit">Kirim</button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer id="main__footer">
+      <h2>Office</h2>
+      <strong>PT.EXCELLENT</strong>
+      <p>Jl.Kembang Permai II Blok I 5 No.6</p>
+      <p>Puri Indah, Jakarta Barat 11610</p>
+      <h2>Contact Us</h2>
+      <i></i><span>021-93397876,5805352</span>
+      <p>Fax 021-5805352</p>
+      <p>Email: <a href="#">excellent@cbn.net.id</a></p>
+    </footer>
+  </body>
+</html>
