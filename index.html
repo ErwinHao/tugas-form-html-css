@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Pendaftaran</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header id="main__header">
 
-      <a href="#">
-        <h1>Excellent</h1>
-        <p>COMPANY</p>
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Pendaftaran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
 
-    </header>
+  <!-- Main Header -->
 
-    <nav id="main__breadcrumb">
-      <ul>
-        <li>Home</li>
-        <li>Registration</li>
-      </ul>
-    </nav>
+  <header id="main__header">
+    <a href="#">
+      <h1>Excellent</h1>
+      <p>COMPANY</p>
+    </a>
+  </header>
 
-    <main id="container">
-      <form action="#">
-        <header id="form__header">
-          <h2>Formulir Pendaftaran</h2>
-        </header>
+  <!-- Form -->
 
+  <main id="container">
+    <form action="#">
+      <header id="form__header">
+        <h2>Formulir Pendaftaran</h2>
+      </header>
+      <div class="form__container">
         <section id="form__left">
           <h3>Keterangan Pribadi</h3>
           <div class="form__group">
-            <div class="pas__photo"></div>
+            <div class="pas__photo">
+              <p>Pas Photo</p>
+              <p>3x3</p>
+            </div>
           </div>
           <div class="form__group">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" placeholder="Nama Lengkap" id="name" />
+
+            <input type="text" placeholder="Nama Lengkap" id="name" autocomplete="off" />
+            <span class='border'></span>
           </div>
           <div class="form__group">
-            <label for="nickname">Nama Panggilan</label>
+
             <input type="text" placeholder="Nama Panggilan" id="nickname" />
           </div>
           <div class="form__group">
@@ -111,12 +110,7 @@
           <h3>Keterangan Tempat Tinggal</h3>
           <div class="form__group">
             <label for="residence">Alamat Lengkap</label>
-            <textarea
-              name="residence"
-              id="residence"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <textarea name="residence" id="residence" cols="30" rows="10"></textarea>
           </div>
 
           <div class="form__group">
@@ -131,12 +125,7 @@
 
           <div class="form__group">
             <label for="other-res">Alamat Lain yang dapat dihubungi</label>
-            <textarea
-              name="other-res"
-              id="other-res"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <textarea name="other-res" id="other-res" cols="30" rows="10"></textarea>
           </div>
 
           <div class="form__group">
@@ -148,18 +137,20 @@
             <button type="submit">Kirim</button>
           </div>
         </section>
-      </form>
-    </main>
+      </div>
+    </form>
+  </main>
 
-    <footer id="main__footer">
-      <h2>Office</h2>
-      <strong>PT.EXCELLENT</strong>
-      <p>Jl.Kembang Permai II Blok I 5 No.6</p>
-      <p>Puri Indah, Jakarta Barat 11610</p>
-      <h2>Contact Us</h2>
-      <i></i><span>021-93397876,5805352</span>
-      <p>Fax 021-5805352</p>
-      <p>Email: <a href="#">excellent@cbn.net.id</a></p>
-    </footer>
-  </body>
+  <footer id="main__footer">
+    <h2>Office</h2>
+    <strong>PT.EXCELLENT</strong>
+    <p>Jl.Kembang Permai II Blok I 5 No.6</p>
+    <p>Puri Indah, Jakarta Barat 11610</p>
+    <h2>Contact Us</h2>
+    <i></i><span>021-93397876,5805352</span>
+    <p>Fax 021-5805352</p>
+    <p>Email: <a href="#">excellent@cbn.net.id</a></p>
+  </footer>
+</body>
+
 </html>
