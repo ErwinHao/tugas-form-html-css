@@ -1,5 +1,44 @@
+:root {
+  --primary: ;
+}
+
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
   box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#main__header {
+  padding: 15px 40px;
+  background-color: #0466c8;
+  line-height: 1em;
+}
+
+#main__header h1 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+#main__header p {
+  color: #fff;
+  font-size: 0.7em;
+  margin-left: 1.5em;
 }
