@@ -1,5 +1,7 @@
 :root {
-  --primary: ;
+  --primary: #0466c8;
+  --secondary: #0582ca;
+  --text: #caf0f8;
 }
 
 * {
@@ -13,6 +15,7 @@
 body {
   line-height: 1.6em;
   font-family: 'Open Sans', sans-serif;
+  background-color: #051923;
 }
 
 ul {
@@ -26,7 +29,7 @@ a {
 
 #main__header {
   padding: 15px 40px;
-  background-color: #0466c8;
+  background-color: var(--primary);
   line-height: 1em;
 }
 
@@ -41,4 +44,144 @@ a {
   color: #fff;
   font-size: 0.7em;
   margin-left: 1.5em;
+}
+
+#container {
+  max-width: 75%;
+  height: auto;
+  margin: 10% auto;
+}
+
+#form__header {
+  background-color: var(--secondary);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px 20px;
+}
+
+#form__header h2 {
+  color: #fff;
+}
+
+.form__container {
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#form__left,
+#form__right {
+  border-bottom: 1px solid #cacaca;
+  padding: 20px 0;
+}
+
+.form__group {
+  padding: 10px 20px;
+}
+
+.pas__photo {
+  width: 3cm;
+  height: 4cm;
+  border: 1px solid black;
+  margin: 10px auto;
+  background: url('img/pasphoto.png') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.pas__photo .overlay p {
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.pas__photo p:first-child {
+  margin-top: 2.5em;
+}
+
+input[type='text'] {
+  height: auto;
+  outline: none;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  box-shadow: 0 0 15px 4px #0000000f;
+}
+
+.border {
+  height: 2px;
+  width: 0px;
+  position: absolute;
+  background-color: darkgrey;
+  display: inline-block;
+  transition: width 0.3s ease-in-out;
+  position: relative;
+  top: -14px;
+  border-radius: 50px;
+}
+
+.toggle-border:focus + .border {
+  width: 100%;
+  background-color: #02add7;
+}
+
+.form__group:nth-child(5) label:first-child {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='radio'] + label {
+  margin-right: 10px;
+}
+
+input[type='date'] {
+  display: block;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 4px #0000000f;
+  margin: 20px 0;
+}
+
+select {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 15px 4px #0000000f;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+input[type='number'] {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 10px 20px;
+  box-shadow: 0 0 15px 4px #0000000f;
+  margin-top: 10px;
+}
+
+.form__group:nth-of-type(11) label:first-child {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#main__footer {
+  background-color: var(--secondary);
 }
