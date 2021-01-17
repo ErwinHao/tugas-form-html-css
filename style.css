@@ -1,7 +1,10 @@
 :root {
   --primary: #0466c8;
   --secondary: #0582ca;
+  --tertiary: #023e8a;
   --text: #caf0f8;
+  --light: #00b4d8;
+  --dark: linear-gradient(to right, #2c3e50, #4ca1af);
 }
 
 * {
@@ -15,7 +18,7 @@
 body {
   line-height: 1.6em;
   font-family: 'Open Sans', sans-serif;
-  background-color: #051923;
+  background: var(--dark);
 }
 
 ul {
@@ -53,14 +56,23 @@ a {
 }
 
 #form__header {
-  background-color: var(--secondary);
+  background: linear-gradient(to right, #3a7bd5, #3a6073);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 #form__header h2 {
   color: #fff;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#form__left h3,
+#form__right h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #0096c7;
 }
 
 .form__container {
@@ -71,14 +83,16 @@ a {
   padding: 20px;
 }
 
-#form__left,
-#form__right {
+#form__left {
   border-bottom: 1px solid #cacaca;
-  padding: 20px 0;
+}
+
+#form__right {
+  padding-top: 20px;
 }
 
 .form__group {
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .pas__photo {
@@ -146,6 +160,7 @@ input[type='text'] {
 
 input[type='radio'] + label {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 input[type='date'] {
@@ -154,7 +169,8 @@ input[type='date'] {
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0 0 15px 4px #0000000f;
-  margin: 20px 0;
+  margin: 10px 0;
+  cursor: pointer;
 }
 
 select {
@@ -166,6 +182,11 @@ select {
   outline: none;
   padding: 10px 20px;
   margin: 20px 0;
+  cursor: pointer;
+}
+
+select option:first-child {
+  color: gray;
 }
 
 input[type='number'] {
@@ -174,12 +195,42 @@ input[type='number'] {
   outline: none;
   padding: 10px 20px;
   box-shadow: 0 0 15px 4px #0000000f;
-  margin-top: 10px;
 }
 
 .form__group:nth-of-type(11) label:first-child {
   display: block;
   margin-bottom: 10px;
+}
+
+/* Form-right contents */
+
+#form__right h3 {
+  margin-bottom: 10px;
+}
+
+textarea {
+  outline: none;
+  box-shadow: 0 0 15px 4px #0000000f;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#btn {
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  background: linear-gradient(to right, #3a7bd5, #3a6073);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  outline: none;
+}
+
+#btn:hover {
+  box-shadow: inset 0 0 100px 5px #0096c7;
 }
 
 #main__footer {

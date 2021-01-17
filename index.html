@@ -79,8 +79,8 @@
               <input type="date" />
             </div>
             <div class="form__group">
-              <label for="religion">Agama</label>
               <select name="religion" id="religion">
+                <option value="">--Agama--</option>
                 <option value="Islam">Islam</option>
                 <option value="Katholik">Katholik</option>
                 <option value="Kristen">Kristen</option>
@@ -98,19 +98,22 @@
             </div>
 
             <div class="form__group">
-              <label for="nth-child">Anak ke</label>
               <input
                 type="number"
                 id="nth-child"
-                value="1"
                 class="toggle-border"
+                placeholder="Anak ke-"
               />
               <div class="border"></div>
             </div>
 
             <div class="form__group">
-              <label for="siblings">Jumlah Saudara</label>
-              <input type="number" id="siblings" class="toggle-border" />
+              <input
+                type="number"
+                id="siblings"
+                class="toggle-border"
+                placeholder="Jumlah Saudara"
+              />
               <div class="border"></div>
             </div>
 
@@ -123,8 +126,8 @@
             </div>
 
             <div class="form__group">
-              <label for="license">Jenis SIM</label>
               <select name="license" id="license">
+                <option value="">--Jenis SIM--</option>
                 <option value="A">SIM A</option>
                 <option value="B1">SIM B1</option>
                 <option value="B2">SIM B2</option>
@@ -137,45 +140,57 @@
           <section id="form__right">
             <h3>Keterangan Tempat Tinggal</h3>
             <div class="form__group">
-              <label for="residence">Alamat Lengkap</label>
               <textarea
                 name="residence"
                 id="residence"
-                cols="30"
-                rows="10"
+                class="toggle-border"
+                placeholder="Alamat Lengkap"
               ></textarea>
+              <div class="border"></div>
             </div>
 
             <div class="form__group">
-              <label for="KTP">No.KTP</label>
-              <input type="number" />
+              <input
+                type="number"
+                class="toggle-border"
+                id="KTP"
+                placeholder="No.KTP"
+              />
+              <div class="border"></div>
             </div>
 
             <div class="form__group">
-              <label for="phone">No.Telp/HP</label>
-              <input type="number" id="phone" />
+              <input
+                type="number"
+                id="phone"
+                class="toggle-border"
+                placeholder="No.Telp/HP"
+              />
+              <div class="border"></div>
             </div>
 
             <div class="form__group">
-              <label for="other-res">Alamat Lain yang dapat dihubungi</label>
               <textarea
                 name="other-res"
                 id="other-res"
-                cols="30"
-                rows="10"
+                class="toggle-border"
+                placeholder="Alamat lain yang dapat dihubungi"
               ></textarea>
+              <div class="border"></div>
             </div>
 
             <div class="form__group">
-              <label for="other-phone">No.Telp/HP Lain</label>
-              <input type="number" id="other-phone" />
-            </div>
-
-            <div class="form__group">
-              <button type="submit">Kirim</button>
+              <input
+                type="number"
+                id="other-phone"
+                class="toggle-border"
+                placeholder="No.Telp/HP lain"
+              />
+              <div class="border"></div>
             </div>
           </section>
         </div>
+        <button id="btn" type="submit">Kirim</button>
       </form>
     </main>
 
