@@ -10,144 +10,193 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header id="main__header">
 
+  <body>
+    <!-- Main Header -->
+
+    <header id="main__header">
       <a href="#">
         <h1>Excellent</h1>
         <p>COMPANY</p>
       </a>
-
-
     </header>
 
-    <nav id="main__breadcrumb">
-      <ul>
-        <li>Home</li>
-        <li>Registration</li>
-      </ul>
-    </nav>
+    <!-- Form -->
 
     <main id="container">
       <form action="#">
         <header id="form__header">
           <h2>Formulir Pendaftaran</h2>
         </header>
+        <div class="form__container">
+          <section id="form__left">
+            <h3>Keterangan Pribadi</h3>
+            <div class="form__group__container">
+              <div class="form__group">
+                <div class="pas__photo">
+                  <div class="overlay">
+                    <p>Pas Photo</p>
+                    <p>3x4</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  placeholder="Nama Lengkap"
+                  id="name"
+                  autocomplete="off"
+                  class="toggle-border"
+                />
+                <div class="border"></div>
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  placeholder="Nama Panggilan"
+                  id="nickname"
+                  class="toggle-border"
+                />
+                <div class="border"></div>
+              </div>
 
-        <section id="form__left">
-          <h3>Keterangan Pribadi</h3>
-          <div class="form__group">
-            <div class="pas__photo"></div>
-          </div>
-          <div class="form__group">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" placeholder="Nama Lengkap" id="name" />
-          </div>
-          <div class="form__group">
-            <label for="nickname">Nama Panggilan</label>
-            <input type="text" placeholder="Nama Panggilan" id="nickname" />
-          </div>
-          <div class="form__group">
-            <label for="gender">Jenis Kelamin</label>
-            <input type="radio" name="gender" value="LK" id="LK" />
-            <label for="LK">Laki-Laki</label>
-            <input type="radio" name="gender" value="PR" id="PR" />
-            <label for="PR">Perempuan</label>
-          </div>
-          <div class="form__group">
-            <label for="birthplace">Tempat Lahir</label>
-            <input type="text" id="birthplace" placeholder="Tempat Lahir" />
-          </div>
-          <div class="form__group">
-            <label for="birthdate">Tanggal Lahir</label>
-            <input type="date" />
-          </div>
-          <div class="form__group">
-            <label for="religion">Agama</label>
-            <select name="religion" id="religion">
-              <option value="Islam">Islam</option>
-              <option value="Katholik">Katholik</option>
-              <option value="Kristen">Kristen</option>
-              <option value="Buddha">Buddha</option>
-              <option value="Hindu">Hindu</option>
-            </select>
-          </div>
-          <div class="form__group">
-            <label for="nationality">Kewarganegaraan</label>
-            <input type="text" placeholder="Kewarganegaraan" />
-          </div>
+              <div class="form__group">
+                <label for="gender">Jenis Kelamin</label>
+                <input type="radio" name="gender" value="LK" id="LK" />
+                <label for="LK">Laki-Laki</label>
+                <input type="radio" name="gender" value="PR" id="PR" />
+                <label for="PR">Perempuan</label>
+              </div>
+            </div>
+            <div class="form__group">
+              <input
+                type="text"
+                id="birthplace"
+                placeholder="Tempat Lahir"
+                class="toggle-border"
+              />
+              <div class="border"></div>
+            </div>
+            <div class="form__group">
+              <label for="birthdate">Tanggal Lahir</label>
+              <input type="date" />
+            </div>
+            <div class="form__group">
+              <select name="religion" id="religion">
+                <option value="">--Agama--</option>
+                <option value="Islam">Islam</option>
+                <option value="Katholik">Katholik</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Hindu">Hindu</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <input
+                type="text"
+                placeholder="Kewarganegaraan"
+                class="toggle-border"
+              />
+              <div class="border"></div>
+            </div>
+            <div class="form__group__container__family">
+              <div class="form__group">
+                <input
+                  type="number"
+                  id="nth-child"
+                  class="toggle-border"
+                  placeholder="Anak ke-"
+                  min="1"
+                />
+                <div class="border"></div>
+              </div>
 
-          <div class="form__group">
-            <label for="nth-child">Anak ke</label>
-            <input type="number" id="nth-child" />
-          </div>
+              <div class="form__group">
+                <input
+                  type="number"
+                  id="siblings"
+                  class="toggle-border"
+                  placeholder="Jumlah Saudara"
+                  min="1"
+                />
+                <div class="border"></div>
+              </div>
+            </div>
 
-          <div class="form__group">
-            <label for="siblings">Jumlah Saudara</label>
-            <input type="number" id="siblings" />
-          </div>
+            <div class="form__group">
+              <label for="marital">Status</label>
+              <input type="radio" name="marital" id="married" />
+              <label for="married">Kawin</label>
+              <input type="radio" name="marital" id="single" />
+              <label for="single">Belum Kawin</label>
+            </div>
 
-          <div class="form__group">
-            <label for="marital">Status</label>
-            <input type="radio" name="marital" id="married" />
-            <label for="married">Kawin</label>
-            <input type="radio" name="marital" id="single" />
-            <label for="single">Belum Kawin</label>
-          </div>
+            <div class="form__group">
+              <select name="license" id="license">
+                <option value="">--Jenis SIM--</option>
+                <option value="A">SIM A</option>
+                <option value="B1">SIM B1</option>
+                <option value="B2">SIM B2</option>
+                <option value="C">SIM C</option>
+                <option value="D">SIM D</option>
+              </select>
+            </div>
+          </section>
 
-          <div class="form__group">
-            <label for="license">Jenis SIM</label>
-            <select name="license" id="license">
-              <option value="A">SIM A</option>
-              <option value="B1">SIM B1</option>
-              <option value="B2">SIM B2</option>
-              <option value="C">SIM C</option>
-              <option value="D">SIM D</option>
-            </select>
-          </div>
-        </section>
+          <section id="form__right">
+            <h3>Keterangan Tempat Tinggal</h3>
+            <div class="form__group">
+              <textarea
+                name="residence"
+                id="residence"
+                class="toggle-border"
+                placeholder="Alamat Lengkap"
+              ></textarea>
+              <div class="border"></div>
+            </div>
 
-        <section id="form__right">
-          <h3>Keterangan Tempat Tinggal</h3>
-          <div class="form__group">
-            <label for="residence">Alamat Lengkap</label>
-            <textarea
-              name="residence"
-              id="residence"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
+            <div class="form__group">
+              <input
+                type="text"
+                class="toggle-border"
+                id="KTP"
+                placeholder="No.KTP"
+              />
+              <div class="border"></div>
+            </div>
 
-          <div class="form__group">
-            <label for="KTP">No.KTP</label>
-            <input type="number" />
-          </div>
+            <div class="form__group">
+              <input
+                type="text"
+                id="phone"
+                class="toggle-border"
+                placeholder="No.Telp/HP"
+              />
+              <div class="border"></div>
+            </div>
 
-          <div class="form__group">
-            <label for="phone">No.Telp/HP</label>
-            <input type="number" id="phone" />
-          </div>
+            <div class="form__group">
+              <textarea
+                name="other-res"
+                id="other-res"
+                class="toggle-border"
+                placeholder="Alamat lain yang dapat dihubungi"
+              ></textarea>
+              <div class="border"></div>
+            </div>
 
-          <div class="form__group">
-            <label for="other-res">Alamat Lain yang dapat dihubungi</label>
-            <textarea
-              name="other-res"
-              id="other-res"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-
-          <div class="form__group">
-            <label for="other-phone">No.Telp/HP Lain</label>
-            <input type="number" id="other-phone" />
-          </div>
-
-          <div class="form__group">
-            <button type="submit">Kirim</button>
-          </div>
-        </section>
+            <div class="form__group">
+              <input
+                type="text"
+                id="other-phone"
+                class="toggle-border"
+                placeholder="No.Telp/HP lain"
+              />
+              <div class="border"></div>
+            </div>
+          </section>
+        </div>
+        <button id="btn" type="submit">Kirim</button>
       </form>
     </main>
 
@@ -157,7 +206,7 @@
       <p>Jl.Kembang Permai II Blok I 5 No.6</p>
       <p>Puri Indah, Jakarta Barat 11610</p>
       <h2>Contact Us</h2>
-      <i></i><span>021-93397876,5805352</span>
+      <span>&phone; 021-93397876,5805352</span>
       <p>Fax 021-5805352</p>
       <p>Email: <a href="#">excellent@cbn.net.id</a></p>
     </footer>
