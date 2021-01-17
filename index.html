@@ -15,13 +15,10 @@
     <!-- Main Header -->
 
     <header id="main__header">
-
       <a href="#">
         <h1>Excellent</h1>
         <p>COMPANY</p>
       </a>
-
-
     </header>
 
     <!-- Form -->
@@ -34,39 +31,42 @@
         <div class="form__container">
           <section id="form__left">
             <h3>Keterangan Pribadi</h3>
-            <div class="form__group">
-              <div class="pas__photo">
-                <div class="overlay">
-                  <p>Pas Photo</p>
-                  <p>3x3</p>
+            <div class="form__group__container">
+              <div class="form__group">
+                <div class="pas__photo">
+                  <div class="overlay">
+                    <p>Pas Photo</p>
+                    <p>3x4</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form__group">
-              <input
-                type="text"
-                placeholder="Nama Lengkap"
-                id="name"
-                autocomplete="off"
-                class="toggle-border"
-              />
-              <div class="border"></div>
-            </div>
-            <div class="form__group">
-              <input
-                type="text"
-                placeholder="Nama Panggilan"
-                id="nickname"
-                class="toggle-border"
-              />
-              <div class="border"></div>
-            </div>
-            <div class="form__group">
-              <label for="gender">Jenis Kelamin</label>
-              <input type="radio" name="gender" value="LK" id="LK" />
-              <label for="LK">Laki-Laki</label>
-              <input type="radio" name="gender" value="PR" id="PR" />
-              <label for="PR">Perempuan</label>
+              <div class="form__group">
+                <input
+                  type="text"
+                  placeholder="Nama Lengkap"
+                  id="name"
+                  autocomplete="off"
+                  class="toggle-border"
+                />
+                <div class="border"></div>
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  placeholder="Nama Panggilan"
+                  id="nickname"
+                  class="toggle-border"
+                />
+                <div class="border"></div>
+              </div>
+
+              <div class="form__group">
+                <label for="gender">Jenis Kelamin</label>
+                <input type="radio" name="gender" value="LK" id="LK" />
+                <label for="LK">Laki-Laki</label>
+                <input type="radio" name="gender" value="PR" id="PR" />
+                <label for="PR">Perempuan</label>
+              </div>
             </div>
             <div class="form__group">
               <input
@@ -99,25 +99,28 @@
               />
               <div class="border"></div>
             </div>
+            <div class="form__group__container__family">
+              <div class="form__group">
+                <input
+                  type="number"
+                  id="nth-child"
+                  class="toggle-border"
+                  placeholder="Anak ke-"
+                  min="1"
+                />
+                <div class="border"></div>
+              </div>
 
-            <div class="form__group">
-              <input
-                type="number"
-                id="nth-child"
-                class="toggle-border"
-                placeholder="Anak ke-"
-              />
-              <div class="border"></div>
-            </div>
-
-            <div class="form__group">
-              <input
-                type="number"
-                id="siblings"
-                class="toggle-border"
-                placeholder="Jumlah Saudara"
-              />
-              <div class="border"></div>
+              <div class="form__group">
+                <input
+                  type="number"
+                  id="siblings"
+                  class="toggle-border"
+                  placeholder="Jumlah Saudara"
+                  min="1"
+                />
+                <div class="border"></div>
+              </div>
             </div>
 
             <div class="form__group">
@@ -154,7 +157,7 @@
 
             <div class="form__group">
               <input
-                type="number"
+                type="text"
                 class="toggle-border"
                 id="KTP"
                 placeholder="No.KTP"
@@ -164,7 +167,7 @@
 
             <div class="form__group">
               <input
-                type="number"
+                type="text"
                 id="phone"
                 class="toggle-border"
                 placeholder="No.Telp/HP"
@@ -184,7 +187,7 @@
 
             <div class="form__group">
               <input
-                type="number"
+                type="text"
                 id="other-phone"
                 class="toggle-border"
                 placeholder="No.Telp/HP lain"
@@ -203,7 +206,7 @@
       <p>Jl.Kembang Permai II Blok I 5 No.6</p>
       <p>Puri Indah, Jakarta Barat 11610</p>
       <h2>Contact Us</h2>
-      <i></i><span>021-93397876,5805352</span>
+      <span>&phone; 021-93397876,5805352</span>
       <p>Fax 021-5805352</p>
       <p>Email: <a href="#">excellent@cbn.net.id</a></p>
     </footer>
